@@ -390,13 +390,13 @@
         </Biomes>
       </Terrain>
       <TerrainShaderData>
-        <PlanetShaderData ambientLightDay="0.5,0.5,0.5,1" ambientLightNight="0.2352941,0.2352941,0.2745098,1" atmosScale="0" atmosScaleSpace="0" atmosScaleSurface="0" debugScaler="0" duskColor="1,1,1,1" eSun="50" fogColor="1,1,1,1" g="-0.95" km="0.001" kr="0.0025" noonColor="1,1,1,1" samples="2" scaleDepth="0.25" scaleDepthMax="0.8" scaleDepthMin="0.002" waveLength="0.78408,0.8178439,0.88,0.5019608" waveLengthMag="1">
+        <PlanetShaderData ambientLightDay="0.5,0.5,0.5,1" ambientLightNight="0.2352941,0.2352941,0.2745098,1" atmosScale="0" atmosScaleSpace="0" atmosScaleSurface="10" debugScaler="0" duskColor="1,1,1,1" eSun="15" fogColor="1,1,1,1" g="-0.95" km="0.001" kr="0.0015" noonColor="1,1,1,1" samples="4" scaleDepth="0.8" scaleDepthMax="0.8" scaleDepthMin="0.002" waveLength="0.629501,0.7285887,0.911,0.5019608" waveLengthMag="1">
           <ambientLightAltitudeRange MaxValue="10000" MinValue="5000" />
           <options atmosScaleAuto="true" scaleDepthAuto="true" />
         </PlanetShaderData>
       </TerrainShaderData>
       <SkyShaderData>
-        <PlanetShaderData ambientLightDay="0.5,0.5,0.5,1" ambientLightNight="0.2352941,0.2352941,0.2745098,1" atmosScale="0" atmosScaleSpace="0" atmosScaleSurface="0" debugScaler="0" duskColor="1,1,1,1" eSun="50" fogColor="1,1,1,1" g="-0.95" km="0.001" kr="0.0025" noonColor="1,1,1,1" samples="2" scaleDepth="0.25" scaleDepthMax="0.8" scaleDepthMin="0.002" waveLength="0.78408,0.8178439,0.88,0.5019608" waveLengthMag="1">
+        <PlanetShaderData ambientLightDay="0.5,0.5,0.5,1" ambientLightNight="0.2352941,0.2352941,0.2745098,1" atmosScale="0" atmosScaleSpace="0" atmosScaleSurface="0" debugScaler="0" duskColor="1,1,1,1" eSun="50" fogColor="1,1,1,1" g="-0.95" km="0.001" kr="0.0025" noonColor="1,1,1,1" samples="2" scaleDepth="0.25" scaleDepthMax="0.8" scaleDepthMin="0.002" waveLength="0.629501,0.7285887,0.911,0.5019608" waveLengthMag="1">
           <ambientLightAltitudeRange MaxValue="10000" MinValue="5000" />
           <options atmosScaleAuto="true" scaleDepthAuto="true" />
         </PlanetShaderData>
