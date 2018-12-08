@@ -188,8 +188,8 @@
         <Modifiers>
           <Modifier type="VertexData.UpdateFinalHeight" enabled="true" name="UpdateFinalHeight" hierarchy="PlanetModifiers/UpdateFinalHeight" order="0" pass="Height" dataIndex="0" />
           <Modifier type="VertexData.GetPosition" enabled="true" name="GetLatitude" hierarchy="PlanetModifiers/GetLatitude" order="0" pass="Final" dataIndexX="-1" dataIndexY="0" dataIndexZ="-1" />
-          <Modifier type="VertexData.VertexDataNoise" enabled="true" name="VertexDataNoise" hierarchy="PlanetModifiers/VertexDataNoise" order="0" pass="Final" noiseType="PerlinFractal" maskDataIndex="-1" seed="0" frequency="8" strength="0.05" fractalType="RigidMulti" octaves="8" fractalLacunarityType="Default" lacunarity="0" fractalAmplitudeType="Manual" fractalAmplitudes="1,1,1,0.125,0.0625,0.03125,0.015625,0.0078125" interpolation="Quintic" dataIndex="1">
-            <DomainWarping domainWarpingType="Fractal" seed="0" frequency="1" amplitude="1" octaves="3" gain="0.1" lacunarity="1" interpolation="Quintic" />
+          <Modifier type="VertexData.VertexDataNoise" enabled="true" name="VertexDataNoise" hierarchy="PlanetModifiers/VertexDataNoise" order="0" pass="Final" noiseType="PerlinFractal" maskDataIndex="-1" seed="0" frequency="8" strength="0.08" fractalType="RigidMulti" octaves="8" fractalLacunarityType="Default" lacunarity="2" fractalAmplitudeType="Manual" fractalAmplitudes="1,1,1,0.125,0.0625,0.03125,0.015625,0.0078125" interpolation="Quintic" dataIndex="1">
+            <DomainWarping domainWarpingType="Scaled" warpScale="0.25,1,0.25" />
           </Modifier>
           <Modifier type="VertexData.BasicArithmetic" enabled="true" name="BasicArithmetic" hierarchy="PlanetModifiers/BasicArithmetic" order="0" pass="Final" dataIndexInputA="0" dataIndexInputB="1" constantValueInputC="1" dataIndexOutput="2" arithmeticType="Add_A_PLUS_B" />
           <Modifier type="VertexData.DebugVisualize" enabled="false" name="DebugVisualize" hierarchy="PlanetModifiers/DebugVisualize" order="0" pass="Final" dataIndex="2" minInputValue="-1" maxInputValue="1">
