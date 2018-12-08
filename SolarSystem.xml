@@ -179,7 +179,7 @@
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="67000" meanMassPerMolecule="43.45" meanNightSurfaceTemperature="736" meanDaySurfaceTemperature="736  " meanGamma="1.41" crushAltitude="0" desc="Carbon Dioxide" /> <!-- mean gamma? -->
       <Orbit argumentOfPeriapsis="0.95735306276" eccentricity="0.006736557944978272" inclination="0.05924710553396898" prograde="true" rightAscensionOfAscendingNode="1.3373602052737101" semiMajorAxis="108208298670.6445" time="-1" trueAnomaly="6.235031327863869" />
-      <Terrain waterGradient="0,0.3529412,0.5921569,0.8588235|1,0.1764706,0.2941177,0.427451||0,1|1,1" uvSizeExponent="8">
+      <Terrain waterGradient="0,1,1,1|1,1,1,1||0,1|1,1" uvSizeExponent="8">
         <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="12">
           <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" maxSubdivisionLevel="11" />
           <Quality qualityLevel="Medium" mobileOnly="false" />
