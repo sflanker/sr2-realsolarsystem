@@ -177,7 +177,7 @@
     </Planet>
     <Planet name="Venus" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="6051840" surfaceGravity="8.87" angularVelocity="-0.00000029924" uniformHeight="false" radiusScaledSpaceHeightAdjustment="1000" skyShaderEnabled="true">
       <Description>TODO</Description>
-      <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="65" meanMassPerMolecule="43.45" meanNightSurfaceTemperature="736" meanDaySurfaceTemperature="736  " meanGamma="1.2842" crushAltitude="0" desc="Carbon Dioxide" />
+      <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="65" meanMassPerMolecule="43.45" meanNightSurfaceTemperature="736" meanDaySurfaceTemperature="736" meanGamma="1.2842" crushAltitude="0" desc="Carbon Dioxide" />
       <Orbit argumentOfPeriapsis="0.95735306276" eccentricity="0.006736557944978272" inclination="0.05924710553396898" prograde="true" rightAscensionOfAscendingNode="1.3373602052737101" semiMajorAxis="108208298670.6445" time="-1" trueAnomaly="6.235031327863869" />
       <Terrain waterGradient="0,1,1,1|1,1,1,1||0,1|1,1" uvSizeExponent="8">
         <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="12">
