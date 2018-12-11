@@ -34,7 +34,7 @@
       </PlanetShaderData>
     </SkyShaderData>
   </Planet>
-    <Planet name="Mercury" parent="Sun" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="2439700" surfaceGravity="3.701" angularVelocity="0.00000124001" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="false">
+    <Planet name="Mercury" parent="Sun" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="2439700" surfaceGravity="3.701" angularVelocity="-0.00000124001" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="false">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="false" crushAltitude="0" />
       <Orbit argumentOfPeriapsis="0.5092569548614961" eccentricity="0.2056516194524991" inclination="0.12224078808692076" prograde="true" rightAscensionOfAscendingNode="0.8431280428769051" semiMajorAxis="57908894075.2445" time="-1" trueAnomaly="2.1955056296202975" />
@@ -175,7 +175,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Venus" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="6051840" surfaceGravity="8.87" angularVelocity="-0.00000029924" uniformHeight="false" radiusScaledSpaceHeightAdjustment="1000" skyShaderEnabled="true">
+    <Planet name="Venus" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="6051840" surfaceGravity="8.87" angularVelocity="0.00000029924" uniformHeight="false" radiusScaledSpaceHeightAdjustment="1000" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="65" meanMassPerMolecule="43.45" meanNightSurfaceTemperature="736" meanDaySurfaceTemperature="736" meanGamma="1.2842" crushAltitude="0" desc="Carbon Dioxide" />
       <Orbit argumentOfPeriapsis="0.95735306276" eccentricity="0.006736557944978272" inclination="0.05924710553396898" prograde="true" rightAscensionOfAscendingNode="1.3373602052737101" semiMajorAxis="108208298670.6445" time="-1" trueAnomaly="6.235031327863869" />
@@ -189,7 +189,7 @@
           <Modifier type="VertexData.UpdateFinalHeight" enabled="true" name="UpdateFinalHeight" hierarchy="PlanetModifiers/UpdateFinalHeight" order="0" pass="Height" dataIndex="0" />
           <Modifier type="VertexData.GetPosition" enabled="true" name="GetLatitude" hierarchy="PlanetModifiers/GetLatitude" order="0" pass="Final" dataIndexX="-1" dataIndexY="0" dataIndexZ="-1" />
           <Modifier type="VertexData.VertexDataNoise" enabled="true" name="VertexDataNoise" hierarchy="PlanetModifiers/VertexDataNoise" order="0" pass="Final" noiseType="PerlinFractal" maskDataIndex="-1" seed="0" frequency="8" strength="0.08" fractalType="RigidMulti" octaves="8" fractalLacunarityType="Default" lacunarity="2" fractalAmplitudeType="Manual" fractalAmplitudes="1,1,1,0.125,0.0625,0.03125,0.015625,0.0078125" interpolation="Quintic" dataIndex="1">
-            <DomainWarping domainWarpingType="Fractal" seed="0" frequency="1" amplitude="1" octaves="3" gain="0.1" lacunarity="1" interpolation="Quintic" />
+            <DomainWarping domainWarpingType="Scaled" warpScale="0.25,1,0.25" />
           </Modifier>
           <Modifier type="VertexData.BasicArithmetic" enabled="true" name="BasicArithmetic" hierarchy="PlanetModifiers/BasicArithmetic" order="0" pass="Final" dataIndexInputA="0" dataIndexInputB="1" constantValueInputC="1" dataIndexOutput="2" arithmeticType="Add_A_PLUS_B" />
           <Modifier type="VertexData.DebugVisualize" enabled="false" name="DebugVisualize" hierarchy="PlanetModifiers/DebugVisualize" order="0" pass="Final" dataIndex="2" minInputValue="-1" maxInputValue="1">
@@ -213,9 +213,6 @@
           <Modifier type="VertexData.Clamp" enabled="true" name="Clamp" hierarchy="PlanetModifiers/Clamp" order="0" pass="Final" dataIndexInput="2" dataIndexOutput="2" clampMin="-1" clampMax="1" />
           <Modifier type="VertexData.ColorBands" enabled="true" name="ColorBands" hierarchy="PlanetModifiers/ColorBands" order="0" dataIndex="2" minInputValue="-1" maxInputValue="1">
             <ColorBands>
-              <ColorBand color="0.1972941,0.2885355,0.3529412,1" weights="0,0,4" />
-              <ColorBand color="0.380722,0.4324056,0.466,1" weights="4,0,2" />
-              <ColorBand color="0.5364445,0.5523311,0.568,1" weights="3,2,3" />
               <ColorBand color="0.818,0.7325189,0.647038,1" weights="1,2,2" />
               <ColorBand color="0.706,0.6233979,0.540796,1" weights="1,3,2" />
               <ColorBand color="0.8308824,0.7025843,0.5742863,1" weights="1,1,1" />
@@ -230,14 +227,10 @@
               <ColorBand color="0.9485294,0.8285404,0.7085515,1" weights="1,3,1" />
               <ColorBand color="0.8235294,0.7086604,0.5912941,1" weights="2,0,2" />
               <ColorBand color="0.9490197,0.8213408,0.6908863,1" weights="1,2,1" />
-              <ColorBand color="0.909804,0.909804,0.909804,1" weights="2,1,1" />
               <ColorBand color="0.9019608,0.8313726,0.7607844,1" weights="2,4,1" />
               <ColorBand color="0.862,0.7861069,0.708564,1" weights="1,2,1" />
               <ColorBand color="0.791,0.7316245,0.674723,1" weights="1,2,2" />
-              <ColorBand color="0.684959,0.7743568,0.853,1" weights="1,0,1" />
-              <ColorBand color="0.674541,0.7107705,0.747,1" weights="2,3,1" />
               <ColorBand color="0.7843138,0.8000001,0.8156863,1" weights="2,4,2" />
-              <ColorBand color="0.908,0.908,0.908,1" weights="1,4,1" />
               <ColorBand color="0.903,0.8312114,0.759423,1" weights="2,4,2" />
               <ColorBand color="0.882353,0.7333333,0.5803922,1" weights="2,4,2" />
               <ColorBand color="0.8470589,0.6705883,0.5490196,1" weights="1,4,1" />
@@ -301,8 +294,6 @@
               <ColorBand color="0.9921569,0.8980393,0.8274511,1" weights="1,4,2" />
               <ColorBand color="0.953,0.8860666,0.825298,1" weights="1,1,1" />
               <ColorBand color="0.9909282,0.8984643,0.827425,1" weights="1,1,1" />
-              <ColorBand color="0.959,0.9270024,0.902419,1" weights="1,4,2" />
-              <ColorBand color="0.9607844,0.9505802,0.9396471,1" weights="1,0,1" />
               <ColorBand color="0.948,0.8575608,0.797268,1" weights="2,1,1" />
               <ColorBand color="0.884,0.7720426,0.695708,1" weights="2,4,2" />
               <ColorBand color="0.937255,0.7725491,0.6235294,1" weights="2,4,2" />
@@ -318,27 +309,15 @@
               <ColorBand color="0.849,0.803437,0.771741,1" weights="1,4,1" />
               <ColorBand color="0.764706,0.764706,0.764706,1" weights="1,4,2" />
               <ColorBand color="0.7137255,0.7372549,0.764706,1" weights="1,2,2" />
-              <ColorBand color="0.538084,0.611728,0.697,1" weights="2,4,2" />
               <ColorBand color="0.681095,0.7181242,0.761,1" weights="1,0,1" />
-              <ColorBand color="0.413852,0.5169832,0.659,1" weights="2,0,2" />
-              <ColorBand color="0.420927,0.4788286,0.559,1" weights="2,2,1" />
-              <ColorBand color="0.4156863,0.5176471,0.6588235,1" weights="1,1,2" />
               <ColorBand color="0.682353,0.7176471,0.7607844,1" weights="1,0,1" />
-              <ColorBand color="0.4156863,0.5176471,0.6588235,1" weights="2,3,2" />
-              <ColorBand color="0.2980392,0.372549,0.4705883,1" weights="2,0,0" />
             </ColorBands>
             <RandomColorBands>
-              <RandomColorBand color="0.3466278,0.4391095,0.4632353,0" bandCount="10,20" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
               <RandomColorBand color="0.7573529,0.7205991,0.5301471,0" bandCount="10,20" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
-              <RandomColorBand color="0.8127028,0.8758822,0.9779412,0" bandCount="2,8" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
               <RandomColorBand color="0.875,0.6136537,0.4073276,0" bandCount="2,6" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
-              <RandomColorBand color="0.8127028,0.8758822,0.9779412,0" bandCount="2,8" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
               <RandomColorBand color="0.875,0.6136537,0.4073276,0" bandCount="5,15" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
-              <RandomColorBand color="0.7819473,0.8203377,0.8823529,0" bandCount="5,15" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
               <RandomColorBand color="0.875,0.6136537,0.4073276,0" bandCount="5,15" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
-              <RandomColorBand color="0.8127028,0.8758822,0.9779412,0" bandCount="2,10" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
               <RandomColorBand color="0.7573529,0.7205991,0.5301471,0" bandCount="10,20" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
-              <RandomColorBand color="0.3466278,0.4101588,0.4632353,0" bandCount="10,20" coreWeight="0,4" blendWeight="1,2" hsvVariance="0.01,0.1,0.05" />
             </RandomColorBands>
           </Modifier>
           <Modifier type="VertexData.VertexDataNoise" enabled="false" name="VertexDataNoise" hierarchy="PlanetModifiers/VertexDataNoise (1)" order="0" pass="Final" noiseType="PerlinFractal" maskDataIndex="-1" seed="0" frequency="10" strength="1" fractalType="FBM" octaves="4" fractalLacunarityType="Default" lacunarity="2" fractalAmplitudeType="Default" gain="0.5" interpolation="Quintic" dataIndex="3">
@@ -346,26 +325,13 @@
           </Modifier>
           <Modifier type="VertexData.ColorBands" enabled="false" name="ColorBands" hierarchy="PlanetModifiers/ColorBands (1)" order="0" dataIndex="3" minInputValue="-1" maxInputValue="1">
             <ColorBands>
-              <ColorBand color="0.3730033,0.375,0.2392241,0" weights="0,10,4" />
-              <ColorBand color="0.5441177,0.451408,0.3471096,0" weights="4,30,4" />
-              <ColorBand color="0.5360294,0.5482915,0.5955882,0" weights="4,10,4" />
               <ColorBand color="0.7132353,0.5975696,0.4107251,0" weights="4,4,4" />
-              <ColorBand color="0.5761917,0.6545236,0.7426471,0" weights="4,10,4" />
               <ColorBand color="0.7132353,0.5430281,0.2680781,0" weights="4,6,4" />
-              <ColorBand color="0.6176471,0.5744869,0.5047667,0" weights="4,16,4" />
-              <ColorBand color="0.5453854,0.5950178,0.6617647,0" weights="4,20,4" />
-              <ColorBand color="0.5761917,0.6545236,0.7426471,0" weights="4,8,4" />
               <ColorBand color="0.7279412,0.5401235,0.3288286,0" weights="4,20,4" />
-              <ColorBand color="0.5761917,0.6545236,0.7426471,0" weights="4,4,4" />
               <ColorBand color="0.7279412,0.5401235,0.3288286,0" weights="4,20,4" />
               <ColorBand color="0.7205882,0.6951191,0.6187119,0" weights="4,12,4" />
               <ColorBand color="0.6764706,0.5853598,0.48286,0" weights="4,6,4" />
               <ColorBand color="0.7205882,0.6951191,0.6187119,0" weights="4,12,4" />
-              <ColorBand color="0.4512316,0.4632353,0.3466278,0" weights="4,20,4" />
-              <ColorBand color="0.5735294,0.5699812,0.4528905,0" weights="4,4,4" />
-              <ColorBand color="0.4512316,0.4632353,0.3466278,0" weights="4,20,4" />
-              <ColorBand color="0.5441177,0.5406411,0.4259128,0" weights="4,20,4" />
-              <ColorBand color="0.4512316,0.4632353,0.3466278,0" weights="4,20,0" />
             </ColorBands>
             <RandomColorBands />
           </Modifier>
@@ -402,7 +368,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Earth" parent="Sun" seaLevel="0" hasTerrainPhysics="true" hasWater="true" planetType="Planet" radius="6371010" surfaceGravity="9.807" angularVelocity="0.00007292115" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="true">
+    <Planet name="Earth" parent="Sun" seaLevel="0" hasTerrainPhysics="true" hasWater="true" planetType="Planet" radius="6371010" surfaceGravity="9.807" angularVelocity="-0.00007292115" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="1.217" meanMassPerMolecule="28.97" meanNightSurfaceTemperature="283" meanDaySurfaceTemperature="293" meanGamma="1.4" crushAltitude="0" desc="Air" />
       <Orbit argumentOfPeriapsis="4.236310405753741" eccentricity="0.01592971616803470" inclination="0.003276025672219583" prograde="true" rightAscensionOfAscendingNode="3.8399788632761717" semiMajorAxis="149476413813.2218" time="-1" trueAnomaly="6.110927119090109" />
@@ -807,7 +773,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-      <Planet name="Moon" parent="Earth" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="1737530" surfaceGravity="1.62" angularVelocity="0.0000026616998313435190352076" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="false">
+      <Planet name="Moon" parent="Earth" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="1737530" surfaceGravity="1.62" angularVelocity="-0.0000026616998313435190352076" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="false">
         <Description>TODO</Description>
         <Atmosphere hasPhysicsAtmosphere="false" crushAltitude="0" />
         <Orbit argumentOfPeriapsis="0.24262799900330945" eccentricity="0.06168230474466356" inclination="0.09177146253368624" prograde="true" rightAscensionOfAscendingNode="2.035214452949312" semiMajorAxis="384762648.8350" time="-1" trueAnomaly="0.17260967201696956" />
@@ -948,7 +914,7 @@
           </PlanetShaderData>
         </SkyShaderData>
       </Planet>
-    <Planet name="Mars" parent="Sun" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="3389920" surfaceGravity="3.71" angularVelocity="0.0000708822 " uniformHeight="false" radiusScaledSpaceHeightAdjustment="3600" skyShaderEnabled="true">
+    <Planet name="Mars" parent="Sun" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="3389920" surfaceGravity="3.71" angularVelocity="-0.0000708822 " uniformHeight="false" radiusScaledSpaceHeightAdjustment="3600" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="0.02" meanMassPerMolecule="43.34" meanNightSurfaceTemperature="184" meanDaySurfaceTemperature="242" meanGamma="1.28" crushAltitude="0" desc="Carbon Dioxide" />
       <Orbit argumentOfPeriapsis="5.003909231944987" eccentricity="0.09337537129263897" inclination="0.03225585788254454" prograde="true" rightAscensionOfAscendingNode="0.8640152617261914" semiMajorAxis="227947371838.8616" time="-1" trueAnomaly="1.0673742326468582" />
@@ -1233,7 +1199,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Jupiter" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="69911000" surfaceGravity="24.79" angularVelocity="0.00017585" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
+    <Planet name="Jupiter" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="69911000" surfaceGravity="24.79" angularVelocity="-0.00017585" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="160" meanMassPerMolecule="2.22" meanNightSurfaceTemperature="165" meanDaySurfaceTemperature="165" meanGamma="1.41" crushAltitude="5000" desc="Hydrogen" />
       <Orbit argumentOfPeriapsis="4.780597606859631" eccentricity="0.04906253964444493" inclination="0.022753404064943555" prograde="true" rightAscensionOfAscendingNode="1.7543412807785083" semiMajorAxis="778063106506.1802" time="-1" trueAnomaly="4.0405347213366465" />
@@ -1460,7 +1426,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Saturn" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="60258000" surfaceGravity="10.44" angularVelocity="0.000163785" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
+    <Planet name="Saturn" parent="Sun" seaLevel="0" hasTerrainPhysics="false" hasWater="false" planetType="Planet" radius="60258000" surfaceGravity="10.44" angularVelocity="-0.000163785" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="190" meanMassPerMolecule="2.07" meanNightSurfaceTemperature="134" meanDaySurfaceTemperature="134" meanGamma="1.41" crushAltitude="5000" desc="Hydrogen" />
       <Orbit argumentOfPeriapsis="5.921389961926731" eccentricity="0.05068055849331850" inclination="0.04336205898419437" prograde="true" rightAscensionOfAscendingNode="1.9827741636611697" semiMajorAxis="1433209349932.1958" time="-1" trueAnomaly="3.283580957811609" />
@@ -1687,7 +1653,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Uranus" parent="Sun" seaLevel="100" hasTerrainPhysics="false" hasWater="true" planetType="Planet" radius="25559000" surfaceGravity="8.87" angularVelocity="-0.000101237" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
+    <Planet name="Uranus" parent="Sun" seaLevel="100" hasTerrainPhysics="false" hasWater="true" planetType="Planet" radius="25559000" surfaceGravity="8.87" angularVelocity="0.000101237" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="1270" meanMassPerMolecule="2.64" meanNightSurfaceTemperature="76" meanDaySurfaceTemperature="76" meanGamma="1.41" crushAltitude="5000" desc="Hydrogen" />
       <Orbit argumentOfPeriapsis="1.7360271635022814" eccentricity="0.04820497897552285" inclination="0.013434087851918637" prograde="true" rightAscensionOfAscendingNode="1.2940398554884746" semiMajorAxis="2864240935723.1377" time="-1" trueAnomaly="3.7936034028357253" />
@@ -1816,7 +1782,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Neptune" parent="Sun" seaLevel="100" hasTerrainPhysics="false" hasWater="true" planetType="Planet" radius="24764000" surfaceGravity="11.15" angularVelocity="0.00011" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
+    <Planet name="Neptune" parent="Sun" seaLevel="100" hasTerrainPhysics="false" hasWater="true" planetType="Planet" radius="24764000" surfaceGravity="11.15" angularVelocity="-0.00011" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="450" meanMassPerMolecule="2.69" meanNightSurfaceTemperature="72" meanDaySurfaceTemperature="72" meanGamma="1.41" crushAltitude="5000" desc="Hydrogen" />
       <Orbit argumentOfPeriapsis="4.430725668234397" eccentricity="0.007765443639605666" inclination="0.030971544983691833" prograde="true" rightAscensionOfAscendingNode="2.3015623822745006" semiMajorAxis="4505591706746.133" time="-1" trueAnomaly="5.580711256501615" />
