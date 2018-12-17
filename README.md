@@ -9,3 +9,6 @@ This is a first stage of RSS. It's real scaled, but not modeled/textured properl
 
 # Getting back to stock system
 Load any sandbox made with stock solar system.
+
+# List of Real Rockets with Real Engines So Far
+https://www.simplerockets.com/Forums/View/5557/RSS-List-of-real-rocekts-with-real-engines-so-far
