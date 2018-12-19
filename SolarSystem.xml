@@ -1653,7 +1653,7 @@
         </PlanetShaderData>
       </SkyShaderData>
     </Planet>
-    <Planet name="Uranus" parent="Sun" seaLevel="100" hasTerrainPhysics="false" hasWater="true" planetType="Planet" radius="25559000" surfaceGravity="8.87" angularVelocity="0.000101237" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
+    <Planet name="Urados" parent="Sun" seaLevel="100" hasTerrainPhysics="false" hasWater="true" planetType="Planet" radius="25559000" surfaceGravity="8.87" angularVelocity="0.000101237" uniformHeight="true" radiusScaledSpaceHeightAdjustment="0" skyShaderEnabled="true">
       <Description>TODO</Description>
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="1270" meanMassPerMolecule="2.64" meanNightSurfaceTemperature="76" meanDaySurfaceTemperature="76" meanGamma="1.41" crushAltitude="5000" desc="Hydrogen" />
       <Orbit argumentOfPeriapsis="1.7360271635022814" eccentricity="0.04820497897552285" inclination="0.013434087851918637" prograde="true" rightAscensionOfAscendingNode="1.2940398554884746" semiMajorAxis="2864240935723.1377" time="-1" trueAnomaly="3.7936034028357253" />
