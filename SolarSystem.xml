@@ -5721,7 +5721,7 @@
       <Planet name="Nereid" parent="Neptune" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="170000" surfaceGravity="0.07124" angularVelocity="-0.00000020193" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="false">
         <Description>TODO</Description>
         <Atmosphere hasPhysicsAtmosphere="false" crushAltitude="0" />
-        <Orbit argumentOfPeriapsis="5.17533968085209" eccentricity="0.744549120339951" inclination="0.0875732082343871" prograde="FALSE" rightAscensionOfAscendingNode="5.57887788607798" semiMajorAxis="5519107109.3088" time="-1" trueAnomaly="3.80673930930623" />
+        <Orbit argumentOfPeriapsis="5.17533968085209" eccentricity="0.744549120339951" inclination="0.0875732082343871" prograde="TRUE" rightAscensionOfAscendingNode="5.57887788607798" semiMajorAxis="5519107109.3088" time="-1" trueAnomaly="3.80673930930623" />
         <Terrain waterGradient="0,1,1,1|1,1,1,1||0,1|1,1" uvSizeExponent="8">
           <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="10">
             <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" />
@@ -5862,7 +5862,7 @@
       <Planet name="Naiad" parent="Neptune" seaLevel="0" hasTerrainPhysics="true" hasWater="false" planetType="Planet" radius="29000" surfaceGravity="0.01545" angularVelocity="-0.000247" uniformHeight="false" radiusScaledSpaceHeightAdjustment="5000" skyShaderEnabled="false">
         <Description>TODO</Description>
         <Atmosphere hasPhysicsAtmosphere="false" crushAltitude="0" />
-        <Orbit argumentOfPeriapsis="5.09782646541516" eccentricity="0.00147539278364447" inclination="0.578564421056204" prograde="FALSE" rightAscensionOfAscendingNode="0.890045257425768" semiMajorAxis="48293205.0287293" time="-1" trueAnomaly="6.20878712893133" />
+        <Orbit argumentOfPeriapsis="5.09782646541516" eccentricity="0.00147539278364447" inclination="0.578564421056204" prograde="TRUE" rightAscensionOfAscendingNode="0.890045257425768" semiMajorAxis="48293205.0287293" time="-1" trueAnomaly="6.20878712893133" />
         <Terrain waterGradient="0,1,1,1|1,1,1,1||0,1|1,1" uvSizeExponent="8">
           <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="10">
             <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" />
