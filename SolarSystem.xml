@@ -374,7 +374,7 @@
       <Orbit argumentOfPeriapsis="4.236310405753741" eccentricity="0.01592971616803470" inclination="0.003276025672219583" prograde="true" rightAscensionOfAscendingNode="3.8399788632761717" semiMajorAxis="149476413813.2218" time="-1" trueAnomaly="6.110927119090109" />
       <Terrain waterGradient="0,0.1,0.2480053,0.4901961|1,0,0,0||0,1|1,1" uvSizeExponent="8">
         <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="14">
-          <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" maxSubdivisionLevel="11" />
+          <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" />
           <Quality qualityLevel="Medium" mobileOnly="false" />
           <Quality qualityLevel="High" mobileOnly="false" waterQuadEdgeVertexCount="29" />
         </QualitySettings>
@@ -778,7 +778,7 @@
         <Atmosphere hasPhysicsAtmosphere="false" crushAltitude="0" />
         <Orbit argumentOfPeriapsis="0.24262799900330945" eccentricity="0.06168230474466356" inclination="0.09177146253368624" prograde="true" rightAscensionOfAscendingNode="2.035214452949312" semiMajorAxis="384762648.8350" time="-1" trueAnomaly="0.17260967201696956" />
         <Terrain waterGradient="0,1,1,1|1,1,1,1||0,1|1,1" uvSizeExponent="8">
-          <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="10">
+          <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="12">
             <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" />
             <Quality qualityLevel="Medium" mobileOnly="false" />
             <Quality qualityLevel="High" mobileOnly="false" waterQuadEdgeVertexCount="29" />
@@ -919,7 +919,7 @@
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="0.02" meanMassPerMolecule="43.34" meanNightSurfaceTemperature="184" meanDaySurfaceTemperature="242" meanGamma="1.28" crushAltitude="0" desc="Carbon Dioxide" />
       <Orbit argumentOfPeriapsis="5.003909231944987" eccentricity="0.09337537129263897" inclination="0.03225585788254454" prograde="true" rightAscensionOfAscendingNode="0.8640152617261914" semiMajorAxis="227947371838.8616" time="-1" trueAnomaly="1.0673742326468582" />
       <Terrain waterGradient="0,0.3529412,0.5921569,0.8588235|1,0.1764706,0.2941177,0.427451||0,1|1,1" uvSizeExponent="8">
-        <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="11">
+        <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="13">
           <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" maxSubdivisionLevel="10" />
           <Quality qualityLevel="Medium" mobileOnly="false" />
           <Quality qualityLevel="High" mobileOnly="false" waterQuadEdgeVertexCount="29" />
