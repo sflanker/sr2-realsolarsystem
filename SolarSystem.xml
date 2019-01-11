@@ -373,7 +373,7 @@
       <Atmosphere hasPhysicsAtmosphere="true" surfaceAirDensity="1.217" meanMassPerMolecule="28.97" meanNightSurfaceTemperature="283" meanDaySurfaceTemperature="293" meanGamma="1.4" crushAltitude="0" desc="Air" />
       <Orbit argumentOfPeriapsis="4.236310405753741" eccentricity="0.01592971616803470" inclination="0.003276025672219583" prograde="true" rightAscensionOfAscendingNode="3.8399788632761717" semiMajorAxis="149476413813.2218" time="-1" trueAnomaly="6.110927119090109" />
       <Terrain waterGradient="0,0.1,0.2480053,0.4901961|1,0,0,0||0,1|1,1" uvSizeExponent="8">
-        <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="12">
+        <QualitySettings terrainQuadEdgeVertexCount="29" waterQuadEdgeVertexCount="15" minSubdivisionLevel="3" maxSubdivisionLevel="14">
           <Quality qualityLevel="Low" mobileOnly="false" terrainQuadEdgeVertexCount="13" waterQuadEdgeVertexCount="7" maxSubdivisionLevel="11" />
           <Quality qualityLevel="Medium" mobileOnly="false" />
           <Quality qualityLevel="High" mobileOnly="false" waterQuadEdgeVertexCount="29" />
