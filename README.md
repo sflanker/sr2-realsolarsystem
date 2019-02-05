@@ -1,14 +1,12 @@
 # Introduction 
-This is a first stage of RSS. It's real scaled, but not modeled/textured properly: Mercury, Venus, Saturn, Neptune is copy and pasted planets with real parameters. All orbital parameters are retrieved from JPL Horizon website and the starting date is 2018-12-25.
+This is a simulation of the real Solar System for SimpleRockets 2 using realistic orbital parameters. We are currently working on more bodies and Map View texturs, not surfaces yet.
+All orbital parameters are retrieved from JPL Horizon (2018-12-25): ssd.jpl.nasa.gov
 
 # Getting Started
-1.	Make "RealSolarSystem" folder in Userdata/Solarsystem.
-2.	Cut and paste "RealSolarSystem.xml" into the folder.
-3.	Dowanload RSS V 0.05 from the forum post.
-4.	Run the game.
+1.	Paste "SimpleRockets2" into "C:\Users\[your user name]\AppData\LocalLow\Jundroo"
+2.	Download the latest RSS sandbox from the forum post: bit.ly/2t6BtOP
+3.	Run the game and pick the right sandbox.
+You can check for some RSS scaled rockets in this list: bit.ly/2TxpOnR
 
 # Getting back to stock system
-Load any sandbox made with stock solar system.
-
-# List of Real Rockets with Real Engines So Far
-https://www.simplerockets.com/Forums/View/5557/RSS-List-of-real-rocekts-with-real-engines-so-far
+Load any sandbox made with stock Planetary System.
